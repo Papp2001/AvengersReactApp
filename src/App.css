@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@font-face {
+  font-family: 'AvengerFont';
+  src: url(fonts/Avengeance-E1zj.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'MarvelFont';
+  src: url(fonts/MarvelRegular-Dj83.ttf) format('truetype');
+}
+
+.avengerCard {
+  font-family: 'MarvelFont' ;
+  width: 400px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow:  0 5px 5px black;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.avengerDetails img {
+  width: auto;
+  height: 400px;
+}
+
+.gallery {
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 05fr));
+  grid-gap: 2rem;
+}
+.mainTitle {
+  font-family: 'AvengerFont';
+  font-size: 80px;
+  color: white;
+  text-transform: uppercase;
+}
+.avengerCard img {
+  width: 100px;
+  height: auto;
+}
+
+
+.btn-group{
+  display: flex;
+}
+ button{
+  outline: none;
+  border: none;
+  width: 150px;
+  padding: 0.3rem 0;
+  margin: 1rem;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-group button:disabled {
+  background-color: grey;
+  cursor: default;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  background-color: #3498db; /* Adjust the background color as needed */
+  border-radius: 10px;
+  color: #fff; /* Text color */
+}
